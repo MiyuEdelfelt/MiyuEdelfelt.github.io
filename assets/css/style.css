@@ -1,0 +1,104 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+#Hero-Section {
+  background-image: url("../img/una-taza-de-javascript.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+
+#Hero-Section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajusta el objeto dentro de su contenedor */
+}
+
+
+
+.card {
+  transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen cubra el ancho de la tarjeta */
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+/* Estilos específicos para la sección de contacto */
+#Contacto form label {
+  font-weight: 700;
+  color: #373a3c;
+}
+
+hr.my-2 {
+  border-top: 1px solid #312e2e; /* Color gris para la línea */
+  margin: 10px 0; /* Espaciado vertical para separar el texto del botón */
+}
+
+
+hr.my-2-i {
+  border-top: 1px solid #312e2e; /* Color gris para la línea */
+  margin: 10px 0; /* Espaciado vertical para separar el texto del botón */
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+      font-weight: 400;
+  }
+
+  .navbar-brand {
+      width: 100px;
+  }
+}
+
+.navbar-brand-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+
+/*Portafolio*/
+
+.portafolio-style {
+  background: linear-gradient(to bottom, #000, #fff);
+  color: #ffffff; /* Cambiar el color del texto a blanco */
+}
+
+.portafolio-style h1 {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.portafolio-style .card {
+  border: 2px solid #0ff; /* Borde más grueso para mayor visibilidad */
+  box-shadow: 0 0 15px #0ff; /* Sombra más brillante y extensa */
+}
+
+.portafolio-style .card-title,
+.portafolio-style .card-text {
+  color: black; /* Cambio a texto negro */
+  text-shadow: none; /* Eliminar sombra de texto */
+}
